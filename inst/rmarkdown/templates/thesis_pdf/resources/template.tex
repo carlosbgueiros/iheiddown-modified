@@ -225,7 +225,7 @@ $endif$
   \Large\sffamily\textbf{\@title}
   \vspace{1cm}\par % distance to programme statement
   \centering\large\sffamily\textbf{THESIS}\\
-  submitted at the Graduate Institute\\
+  submitted at the $university$\\
   in fulfillment of the requirements of the\\
   $department$
   \vspace*{0.5cm}\par % distance to author
@@ -294,13 +294,13 @@ $endif$
 % TITLEPAGE 1
 \begin{titlepage}
 \hspace*{-1.25cm}
-\includegraphics[width=0.4\linewidth]{iheid.eps}
+%\includegraphics[width=0.4\linewidth]{iheid.eps} %Remove IHEID Logo
 
 \maketitle
 
 \vspace*{1cm}
 
-\sffamily{Thesis No. $thesisno$}
+\sffamily{Matriculation No. $studentid$}
 
 \vspace*{1cm}
 \sffamily\textbf{Supervisor: $supervisor$}\\
@@ -310,7 +310,7 @@ $if(phd)$
 $endif$
 
 \vspace*{1cm}
-\sffamily\textbf{Geneva}\\
+\sffamily\textbf{$city$}\\
 \sffamily\textbf{\the\year}
 
 \thispagestyle{firstpages} % this line is needed to set a different header/footer than for the rest of the document
@@ -336,18 +336,18 @@ $if(phd)$
 % TITLEPAGE 4
 \begin{titlepage}
 \centering\sffamily{
-INSTITUT DE HAUTES ETUDES INTERNATIONALES ET DU DEVELOPPEMENT\\
-GRADUATE INSTITUTE OF INTERNATIONAL AND DEVELOPMENT STUDIES
+$university$\\
+$department$
 }
 
 \maketitle
 
 \vspace*{1cm}
 
-\sffamily{Thesis No. $thesisno$}
+\sffamily{Matriculation No. $studentid$}
 
 \vspace*{1cm}
-\sffamily\textbf{Geneva}\\
+\sffamily\textbf{$city$}\\
 \sffamily\textbf{\the\year}
 
 \thispagestyle{firstpages}
@@ -365,8 +365,8 @@ $endif$
 % TITLEPAGE 6
 \begin{titlepage}
 \centering\sffamily{
-INSTITUT DE HAUTES ETUDES INTERNATIONALES ET DU DEVELOPPEMENT\\
-GRADUATE INSTITUTE OF INTERNATIONAL AND DEVELOPMENT STUDIES
+$university$\\
+$department$
 }
 
 \vspace*{1cm}

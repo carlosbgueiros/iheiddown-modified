@@ -9,9 +9,11 @@ title: |
   in R Markdown
 firstnames: Author
 lastnames: Name
-thesisno: 12345
+studentid: 12345
 phd: true # Or: false for Masters
+university: Your University
 department: Your Department
+city: Your city
 degreedate: June 2020
 supervisor: Minerva McGonagall
 secondreader: Horace Slughorn
