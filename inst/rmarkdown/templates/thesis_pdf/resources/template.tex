@@ -90,8 +90,8 @@ $endif$
 %UL 15 Oct 2019, enable link highlighting to be turned off from YAML
 % \usepackage[dvipsnames]{color}
 % \usepackage[colorlinks=true,pdfpagelabels,hidelinks=$hidelinks$]{hyperref}
-\RequirePackage[colorlinks=true,linkcolor=red,
-citecolor=red,filecolor=red,urlcolor=black]{hyperref} % uses IHEID red for external links
+\RequirePackage[colorlinks=true,linkcolor=NavyBlue,
+citecolor=NavyBlue,filecolor=red,urlcolor=black]{hyperref} % uses IHEID red for external links
 % \hypersetup{citecolor=red}
 
 %%%%% BIBLIOGRAPHY SETUP
@@ -111,7 +111,8 @@ citecolor=red,filecolor=red,urlcolor=black]{hyperref} % uses IHEID red for exter
 
 %UL 3 Dec 2018: set this from YAML in index.Rmd
 $if(bib-humanities)$
-\usepackage[style=authoryear, sorting=nyt, backend=biber, maxcitenames=2, useprefix, 
+%style=authoryear
+\usepackage[style=apa, sorting=nyt, backend=biber, maxcitenames=2, useprefix, 
 doi=$if(doi-in-bibliography)$$doi-in-bibliography$$else$false$endif$, isbn=false, uniquename=false]{biblatex}
 \newcommand*{\bibtitle}{$bibliography-heading-in-pdf$}
 $else$
