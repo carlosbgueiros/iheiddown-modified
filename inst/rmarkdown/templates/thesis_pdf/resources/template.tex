@@ -362,27 +362,28 @@ $department$
 \end{titlepage}
 $endif$
 
-$if(resume)$
-% TITLEPAGE 6
-\begin{titlepage}
-\centering\sffamily{
-$university$\\
-$department$
-}
-
-\vspace*{1cm}
-
-\begin{center}
-\sffamily\large\textbf{RESUME / ABSTRACT}
-
-\vspace*{1cm}
-
-\sffamily\normalsize{$resume$}
-\end{center}
-
-\thispagestyle{firstpages}
-\end{titlepage}
-$endif$
+% 
+% $if(resume)$
+% % TITLEPAGE 6
+% \begin{titlepage}
+% \centering\sffamily{
+% $university$\\
+% $department$
+% }
+% 
+% \vspace*{1cm}
+% 
+% \begin{center}
+% \sffamily\large\textbf{RESUME / ABSTRACT}
+% 
+% \vspace*{1cm}
+% 
+% \sffamily\normalsize{$resume$}
+% \end{center}
+% 
+% \thispagestyle{firstpages}
+% \end{titlepage}
+% $endif$
 \restoregeometry % Reset page geometry
 \setcounter{page}{1} % Reset page counter
 
@@ -431,11 +432,11 @@ $if(dedication)$
 $endif$
 
 %%%%% ACKNOWLEDGEMENTS -- Nothing to do here except comment out if you don't want it.
-$if(acknowledgements)$
-\begin{acknowledgements}
- 	$acknowledgements$
-\end{acknowledgements}
-$endif$
+%$if(acknowledgements)$
+%\begin{acknowledgements}
+ %	$acknowledgements$
+%\end{acknowledgements}
+%$endif$
 
 %%%%% MINI TABLES
 % This lays the groundwork for per-chapter, mini tables of contents.  Comment the following line
